@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsDownload, BsFillPersonLinesFill } from 'react-icons/bs'
+import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 export const SocialLinks = () => {
 
@@ -14,7 +14,7 @@ export const SocialLinks = () => {
                 </>
             ),
             href: 'https://www.linkedin.com/in/khourybenjamin/',
-            style: 'rounded-tr-md'
+            style: ''
         },
         {
             id: 2,
@@ -41,8 +41,8 @@ export const SocialLinks = () => {
                 Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/resume.pdf',
-            style: 'rounded-br-md',
+            href: '/Ben-Khoury-Resume.pdf',
+            style: '',
             download: true
         },
     ]
@@ -52,7 +52,7 @@ export const SocialLinks = () => {
         <ul>
 
             {links.map((link) => (
-                <li key={link.id} className='flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500'>
+                <li key={link.id} className={'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500' + ' ' + link.style}>
                     <a
                     href={`${link.href}`}
                     className='flex justify-between items-center w-full text-white'
