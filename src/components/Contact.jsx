@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <div name='contact' className='bg-gradient-to-b from-black to-gray-800 w-full h-screen p-4 text-white'>
         <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-auto'>
-            <div className='pb-8'>
+            <div className='pb-8 sm:mt-15'>
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
                 <p className='py-6'>Fill in the form below to get in touch with me.</p>
             </div>
