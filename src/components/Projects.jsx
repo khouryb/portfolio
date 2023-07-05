@@ -3,9 +3,9 @@ import noughts from '../assets/portfolio/noughts-and-crosses.png'
 import movie from '../assets/portfolio/movie-list.png'
 import divorce from '../assets/portfolio/divorce.png'
 
-export const Portfolio = () => {
+export const Projects = () => {
 
-    const projects = [
+    const portfolio = [
         {
             id: 1,
             src: noughts,
@@ -28,7 +28,7 @@ export const Portfolio = () => {
 
     return (
         <div
-          name="portfolio"
+          name="projects"
           className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
         >
           <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
@@ -40,7 +40,7 @@ export const Portfolio = () => {
             </div>
     
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {projects.map(({ id, src, live, repo }) => (
+              {portfolio.map(({ id, src, live, repo }) => (
                 <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
                   <img
                     src={src}
