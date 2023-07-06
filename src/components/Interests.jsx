@@ -1,6 +1,25 @@
 import React from 'react'
 
 export const Interests = () => {
+
+    const hobbies = [
+        {
+            id: 1,
+            name: 'Health and Fitness',
+            description: 'I am interested in bodybuilding and fitness. It helps keep me sane after staring at a screen all day!'
+        },
+        {
+            id: 2,
+            name: 'Language Learning',
+            description: 'I have a passion for learning new languages, having learned Spanish over lock down and also practising at work with colleagues. I find it gives me a new perspective and the ability to connect with different cultures.'
+        },
+        {
+            id: 3,
+            name: 'Cooking',
+            description: 'Pretty basic I know, but I love a good butter chicken!'
+        },
+    ]
+
     return (
         <div
           name="interests"
@@ -13,33 +32,13 @@ export const Interests = () => {
               </p>
             </div>
     
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {/* {portfolio.map(({ id, src, live, repo, description }) => (
+            <div className="mt-4 grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+              {hobbies.map(({ id, name, description }) => (
                 <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
-                  <p>{description}</p>
-                  <img
-                    src={src}
-                    alt=""
-                    className="mt-1 rounded-md duration-200 hover:scale-105"
-                  />
-                  <div className="flex items-center justify-center">
-                    <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 cursor-pointer"
-                    href={`${live}`}
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                      Demo
-                    </a>
-                    <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 cursor-pointer"
-                    href={`${repo}`}
-                    target='_blank'
-                    rel='noreferrer'
-                    >
-                      Code
-                    </a>
-                  </div>
+                    <h3 className='text-xl font-bold text-center'>{name}</h3>
+                    <p className='p-4'>{description}</p>
                 </div>
-              ))} */}
+              ))}
             </div>
           </div>
         </div>

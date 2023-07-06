@@ -2,6 +2,7 @@ import React from 'react'
 import noughts from '../assets/portfolio/noughts-and-crosses.png'
 import movie from '../assets/portfolio/movie-list.png'
 import divorce from '../assets/portfolio/divorce.png'
+import calorie from '../assets/portfolio/calorie.png'
 
 export const Projects = () => {
 
@@ -29,7 +30,7 @@ export const Projects = () => {
         },
         {
           id: 4,
-          src: movie,
+          src: calorie,
           repo: 'https://github.com/hpramanathan/project3-mernstack-app',
           live: 'https://hpramanathan.github.io/project3-mernstack-app/',
           description: 'Built using Rails and React, lose weight easily with this nifty app!'
