@@ -7,23 +7,34 @@ export const Projects = () => {
 
     const portfolio = [
         {
-            id: 1,
-            src: noughts,
-            repo: 'https://github.com/khouryb/naughts-and-crosses',
-            live: 'https://khouryb.github.io/naughts-and-crosses/'
+          id: 1,
+          src: noughts,
+          repo: 'https://github.com/khouryb/naughts-and-crosses',
+          live: 'https://khouryb.github.io/naughts-and-crosses/',
+          description: 'A noughts and crosses game made with HTML, CSS, and JavaScript'
         },
         {
-            id: 2,
-            src: movie,
-            repo: 'https://github.com/khouryb/movie-list',
-            live: 'https://khouryb.github.io/movie-list/'
+          id: 2,
+          src: movie,
+          repo: 'https://github.com/khouryb/movie-list',
+          live: 'https://khouryb.github.io/movie-list/',
+          description: 'Using React, movie list saves your favourite movies using an external API'
         },
         {
-            id: 3,
-            src: divorce,
-            repo: 'https://github.com/hpramanathan/project3-mernstack-app',
-            live: 'https://hpramanathan.github.io/project3-mernstack-app/'
+          id: 3,
+          src: divorce,
+          repo: 'https://github.com/hpramanathan/project3-mernstack-app',
+          live: 'https://hpramanathan.github.io/project3-mernstack-app/',
+          description: 'A MERN stack app. Share your favourite divorce party memories.'
         },
+        {
+          id: 4,
+          src: movie,
+          repo: 'https://github.com/hpramanathan/project3-mernstack-app',
+          live: 'https://hpramanathan.github.io/project3-mernstack-app/',
+          description: 'Built using Rails and React, lose weight easily with this nifty app!'
+        },
+        
     ]
 
     return (
@@ -40,13 +51,15 @@ export const Projects = () => {
             </div>
     
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-              {portfolio.map(({ id, src, live, repo }) => (
+              {portfolio.map(({ id, src, live, repo, description }) => (
                 <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+                  
                   <img
                     src={src}
                     alt=""
-                    className="rounded-md duration-200 hover:scale-105"
+                    className="mt-1 rounded-md duration-200 hover:scale-105"
                   />
+                  <p>{description}</p>
                   <div className="flex items-center justify-center">
                     <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 cursor-pointer"
                     href={`${live}`}
@@ -55,7 +68,7 @@ export const Projects = () => {
                     >
                       Demo
                     </a>
-                    <a className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105 cursor-pointer"
+                    <a className="w-1/2 px-6 py-1 m-1 duration-200 hover:scale-105 cursor-pointer"
                     href={`${repo}`}
                     target='_blank'
                     rel='noreferrer'

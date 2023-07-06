@@ -22,10 +22,14 @@ export const NavBar = () => {
         },
         {
             id: 4,
-            link: 'experience',
+            link: 'skills',
         },
         {
             id: 5,
+            link: 'interests',
+        },
+        {
+            id: 6,
             link: 'contact',
         },
     ]
