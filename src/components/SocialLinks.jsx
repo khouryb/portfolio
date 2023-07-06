@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
 
 export const SocialLinks = () => {
 
@@ -34,17 +33,7 @@ export const SocialLinks = () => {
             ),
             href: 'mailto:khourybenjamin@gmail.com',
         },
-        {
-            id: 4,
-            child: (
-                <>
-                Resume <BsFillPersonLinesFill size={30} />
-                </>
-            ),
-            href: '/Ben-Khoury-Resume.pdf',
-            style: '',
-            download: true
-        },
+
     ]
 
   return (
@@ -56,7 +45,6 @@ export const SocialLinks = () => {
                     <a
                     href={`${link.href}`}
                     className='flex justify-between items-center w-full text-white'
-                    download={link.download}
                     target='_blank'
                     rel='noreferrer'
                     >
