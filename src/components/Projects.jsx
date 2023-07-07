@@ -31,7 +31,7 @@ export const Projects = () => {
         {
           id: 4,
           src: calorie,
-          repo: 'https://github.com/khouryb/project3-mernstack-app',
+          repo: 'https://github.com/khouryb/calorie-app-frontend',
           live: 'https://khouryb.github.io/calorie-app-frontend/',
           description: 'Built using Rails and React, lose weight easily with this nifty app!'
         },
