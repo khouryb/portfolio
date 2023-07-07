@@ -24,7 +24,7 @@ export const Projects = () => {
         {
           id: 3,
           src: divorce,
-          repo: 'https://github.com/hpramanathan/project3-mernstack-app',
+          repo: 'https://github.com/khouryb/project3-mernstack-app',
           live: 'https://hpramanathan.github.io/project3-mernstack-app/',
           description: 'A MERN stack app. Share your favourite divorce party memories.'
         },
